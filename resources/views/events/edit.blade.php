@@ -19,6 +19,10 @@
       <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento" value="{{ $event->title }}">
     </div>
     <div class="form-group">
+      <label for="date">Data do evento:</label>
+      <input type="date" class="form-control" id="date" name="date" value="{{ date('Y-m-d',strtotime($event->date)) }}">
+    </div>
+    <div class="form-group">
       <label for="title">Cidade:</label>
       <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento" value="{{ $event->city }}">
     </div>
